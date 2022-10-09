@@ -73,7 +73,7 @@ console.log('i', i)
 
 console.log('i', i++)*/
 
-console.log('5 > 3', 5 > 3)
+/*console.log('5 > 3', 5 > 3)
 console.log('3 < 2', 3 < 2)
 
 console.log('8 >= 7', 8 >= 7)
@@ -89,4 +89,16 @@ console.log('4 === 4', 4 === 4)
 console.log('5 === 4', 5 === 4)
 
 console.log('4 === 4', 4 === '4') // false
-console.log('4 == 4', 4 == '4') // true
+console.log('4 == 4', 4 == '4') // true*/
+
+console.log(true && true)
+console.log(true && false)
+
+console.log(true || false)
+console.log(false || false)
+
+console.log(!false)
+console.log(!!true) // !!true = !false => true
+
+console.log((false && true) || (true || false) || !true)
+// false || true || false => true
