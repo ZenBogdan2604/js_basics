@@ -91,7 +91,7 @@ console.log('5 === 4', 5 === 4)
 console.log('4 === 4', 4 === '4') // false
 console.log('4 == 4', 4 == '4') // true*/
 
-console.log(true && true)
+/*console.log(true && true)
 console.log(true && false)
 
 console.log(true || false)
@@ -101,4 +101,27 @@ console.log(!false)
 console.log(!!true) // !!true = !false => true
 
 console.log((false && true) || (true || false) || !true)
-// false || true || false => true
+// false || true || false => true*/
+
+var currentYear = 2018
+var carName = 'Ford'
+var carYear = 2008
+var carAge = carrentYear - carYear
+
+if (carAge < 5) {
+    console.log(carName + ' младше 5 лет')
+} else if (carAge >= 5 && carAge <= 10) {
+    console.log(carName + ' больше или равен 5 годам или меньше или равен 10 годам')
+} else {
+    console.log('Возраст ' + carName + ' равняется ' + carAge + ' годам')
+}
+
+//
+
+var empty = 'Hello'
+
+if (Nan) {
+    console.log('Значение true')
+} else {
+    console.log('Значение false')
+}
