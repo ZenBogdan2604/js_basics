@@ -103,7 +103,7 @@ console.log(!!true) // !!true = !false => true
 console.log((false && true) || (true || false) || !true)
 // false || true || false => true*/
 
-var currentYear = 2018
+/*var currentYear = 2018
 var carName = 'Ford'
 var carYear = 2008
 var carAge = carrentYear - carYear
@@ -124,4 +124,20 @@ if (Nan) {
     console.log('Значение true')
 } else {
     console.log('Значение false')
-}
+}*/
+
+var carColor = 'green'
+
+switch (carColor) {
+    case 'green':
+        console.log('Цыет зелёный')
+        break
+    case 'yellow':
+        console.log('Цвет жёлтый')
+        break
+    case 'red':
+        console.log('Цвет красный')
+        break
+    default:
+        console.log('Цвет неопределён')
+    }
