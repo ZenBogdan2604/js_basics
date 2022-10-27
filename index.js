@@ -153,13 +153,13 @@ function calculateAge(year) {
     return result
 }
 
-function checkAngLogAge(year) {
+function checkAngLogAge(year, name, compareTo) {
     if(calculateAge(carYear) < 10) {
-        console.log('Возраст меньше 10 лет')
+        console.log('Возраст ' + name + ' меньше ' + compareTo + ' лет')
     } else {
-        console.log('Возраст больше 10 лет')
+        console.log('Возраст ' + name + ' больше ' + compareTo + ' лет')
     }
 }
 
-checkAngLogAge(carYear)
-checkAngLogAge(personYear)
+checkAngLogAge(carYear, 'машина', 8)
+checkAngLogAge(personYear,'человек', 30)
