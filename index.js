@@ -143,7 +143,7 @@ switch (carColor) {
     }
 */
 
-var carName = 'Ford'
+/*var carName = 'Ford'
 var carYear = 2010
 var personYear = 1990
 
@@ -162,4 +162,9 @@ function checkAngLogAge(year, name, compareTo) {
 }
 
 checkAngLogAge(carYear, 'машина', 8)
-checkAngLogAge(personYear,'человек', 30)
+checkAngLogAge(personYear,'человек', 30)*/
+var sayHelloTo = function (name) {
+    console.log('Привет, ' + name)
+}
+
+sayHelloTo('Игорь')
