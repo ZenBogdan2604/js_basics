@@ -169,7 +169,7 @@ checkAngLogAge(personYear,'человек', 30)*/
 
 sayHelloTo('Игорь')*/
 
-var str1 = 'Hello world'
+/*var str1 = 'Hello world'
 var str2 = "Hello world 2"
 
 var personName = 'Виктор'
@@ -186,4 +186,24 @@ console.log(newMessage.toUpperCase())
 console.log(newMessage.toLowerCase())
 console.log(newMessage.charAt(1))
 console.log(newMessage.indexOf('world'))
-console.log(newMessage.substr(1, 4))
+console.log(newMessage.substr(1, 4))*/
+
+console.log(-8 / 3)
+console.log(0xAB)
+console.log(2e3)
+console,log(NaN)
+console.log(typeof NaN)
+console.log(123 / 0)
+
+var fortyTwo = 42
+var delta = 8 / 3
+
+console.log(fortyTwo.toString())
+console.log(+delta.toFixed(1) + 4)
+console.log(parseFloat(delta.toFixed(2)))
+
+console.log(isNaN(NaN))
+console.log(isNaN(45))
+
+console.log(isFinite(1 / 0))
+console.log(isFinite(99999999999))
