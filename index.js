@@ -188,7 +188,7 @@ console.log(newMessage.charAt(1))
 console.log(newMessage.indexOf('world'))
 console.log(newMessage.substr(1, 4))*/
 
-console.log(-8 / 3)
+/*console.log(-8 / 3)
 console.log(0xAB)
 console.log(2e3)
 console,log(NaN)
@@ -206,4 +206,42 @@ console.log(isNaN(NaN))
 console.log(isNaN(45))
 
 console.log(isFinite(1 / 0))
-console.log(isFinite(99999999999))
+console.log(isFinite(99999999999))*/
+
+var cars = [
+    'Ford',
+    'Mazda',
+    'Kia',
+    'BMW'
+]
+
+console.log(cars)
+console.log(cars[1])
+
+console.log(cars.length)
+
+// добавит в конец
+cars.push('Audi')
+console.log(cars)
+
+//удаляет и возвращает последний элемент
+cars.pop()
+console.log(cars)
+
+var audi = cars.pop()
+console.log(cars, audi)
+
+//удаляет и возвращает первй элемент
+var ford = cars.shift()
+console.log(cars, ford)
+
+//добавляет в начало
+cars.unshift(audi)
+console.log(cars)
+
+console.log(cars.indexOf('Kia'))
+
+var index = cars.indexOf('Kia')
+var kia = cars[index]
+
+console.log(kia)
