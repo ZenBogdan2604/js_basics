@@ -208,17 +208,13 @@ console.log(isNaN(45))
 console.log(isFinite(1 / 0))
 console.log(isFinite(99999999999))*/
 
-var cars = [
-    'Ford',
-    'Mazda',
-    'Kia',
-    'BMW'
-]
+/*var cars = ['Ford', 'Mazda', 'Kia', 'BMW']
 
 console.log(cars)
 console.log(cars[1])
+//cars[1] = 'Lada'
 
-console.log(cars.length)
+console.log(cars.length) 
 
 // добавит в конец
 cars.push('Audi')
@@ -245,3 +241,89 @@ var index = cars.indexOf('Kia')
 var kia = cars[index]
 
 console.log(kia)
+
+var elements = ['Ford', 'Lada', 'KAMAz', 'BMW', 'Mercedes']
+console.log(elements)
+
+var a = ''
+a = elements[2]
+console.log(a)
+
+var b = ''
+b = elements[0]
+//b = a
+b = elements[3]
+var c = ''
+c = elements[4]
+c = a
+
+console.log(b , c)
+
+
+function check(item){
+    var a = item[3]
+    return a
+}
+
+//c = check(elements)
+//console.log(c)
+
+var elements = ['Ford', 'Lada', 'KAMAz', 'BMW', 'Mercedes']
+
+function chack(f, g){
+    console.log("f= ",f)
+    f = g[g.length -1] 
+   console.log("f= ",f)
+}
+
+
+chack(c, elements)
+console.log(c)
+
+
+/*var carName = 'Ford'
+var carYear = 2010
+var personYear = 1990
+
+function calculateAge(year) {
+    var currentYear = 2018
+    var result = currentYear - year
+    return result
+}
+
+function checkAngLogAge(year, name, compareTo) {
+    if(calculateAge(carYear) < 10) {
+        console.log('Возраст ' + name + ' меньше ' + compareTo + ' лет')
+    } else {
+        console.log('Возраст ' + name + ' больше ' + compareTo + ' лет')
+    }
+}
+
+checkAngLogAge(carYear, 'машина', 8)
+checkAngLogAge(personYear,'человек', 30)*/
+
+var person = {
+    name: 'Вася',
+    year: 1990,
+    family: ['Елена', 'Игорь'],
+    car: {
+        year: 2010,
+        model: 'Ford'
+    },
+    calculateAge: function() {
+        var age = 2018 - this.year
+        console.log('Возраст', age)
+    }
+}
+
+console.log(person)
+console.log(person.name)
+console.log(person['year'])
+var field = 'car'
+console.log(person[field].year)
+
+person.year = 1993
+
+console.log(person)
+
+person.calculateAge()
