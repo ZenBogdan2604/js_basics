@@ -300,7 +300,7 @@ function checkAngLogAge(year, name, compareTo) {
 }
 
 checkAngLogAge(carYear, 'машина', 8)
-checkAngLogAge(personYear,'человек', 30)*/
+checkAngLogAge(personYear,'человек', 30)
 
 var person = {
     name: 'Вася',
@@ -310,7 +310,7 @@ var person = {
         year: 2010,
         model: 'Ford'
     },
-    calculateAge: function() {
+    calculateAge: function () {
         var age = 2018 - this.year
         console.log('Возраст', age)
     }
@@ -326,4 +326,39 @@ person.year = 1993
 
 console.log(person)
 
-person.calculateAge()
+person.calculateAge()*/
+
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+//numbers.push('Not a number')
+//numbers.push('New line')
+
+// i++ => i = 1; 5 < 5
+//for (var i = 0; i < numbers.length; i++) {
+ //   if (numbers[i] % 2 === 0) {
+ //       console.log(numbers[i])
+ //   }
+//}
+
+/*for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 !== 0) {
+        continue
+    }
+    console.log(numbers[i])
+}
+
+for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+        continue
+    }
+    console.log(numbers[i])
+}*/
+
+numbers.push('String')
+
+for (var i = 0; i < numbers.length; i++) {
+    if (typeof numbers[i] === 'string') {
+        break
+    }
+    console.log(numbers[i])
+}
