@@ -70,7 +70,7 @@ for (var step = 1;step <= 4; step++){
         cars.model = 'c43'
     }
     console.log(cars)
-}*/
+}
 
 var a = document.querySelector('a')
 var oldHref = a.getAttribute('href')
@@ -93,3 +93,53 @@ if (hasClass) {
 } else {
   box2.classList.add('blue')
 }
+
+var student = {
+    name: 'Вася',
+    age: 14,
+    phoneNumber: '+79854782313',
+    phone: {
+        name: 'Samsung',
+        model: 'J15'
+    }
+}
+
+console.log(student)
+
+var phone = {
+    name: 'Samsung',
+    model: 'J15'
+}
+
+var student = {
+    name: 'Вася',
+    age: 14,
+    phoneNumber: '+79854782313',
+    phone: phone,
+}
+
+
+
+console.log(student)*/
+
+var button = document.querySelector('button')
+var h1 = document.querySelector('h1')
+var input = document.querySelector('input')
+
+function buttonHandler() {
+    console.log('clicked!')
+    h1.textContent = input.value
+}
+
+h1.addEventListener('mouseenter', function() {
+    this.style.color = 'red'
+    this.style.backgroundColor = 'black'
+})
+
+h1.addEventListener('mouseleave', function() {
+    this.style.color = 'black'
+    this.style.backgroundColor = 'transparent'
+})
+
+button.addEventListener('click', buttonHandler)
+
