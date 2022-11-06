@@ -120,7 +120,7 @@ var student = {
 
 
 
-console.log(student)*/
+console.log(student)
 
 var button = document.querySelector('button')
 var h1 = document.querySelector('h1')
@@ -141,5 +141,13 @@ h1.addEventListener('mouseleave', function() {
     this.style.backgroundColor = 'transparent'
 })
 
-button.addEventListener('click', buttonHandler)
+button.addEventListener('click', buttonHandler)*/
+
+var divs = document.querySelectorAll('div')
+
+for (var i = 0; 1 < divs.length; i++) {
+    divs[i].addEventListener('click', function() {
+        console.log(this.getAttribute('id'))
+    })
+}
 
